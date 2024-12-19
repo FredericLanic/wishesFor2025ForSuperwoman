@@ -2,8 +2,8 @@ package body.behavior;
 
 import body.success.GuaranteedSuccess;
 
-public class SuperWoman {
-    public GuaranteedSuccess useMyOwnSuperPowers() {
+public interface SuperWoman {
+     default GuaranteedSuccess useMyOwnSuperPowers() {
         return new GuaranteedSuccess();
     }
 }
